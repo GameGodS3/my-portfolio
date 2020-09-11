@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
-import SideBar from './components/sidebar';
+import Template from './components/template';
+import background from './assets/background.jpeg';
 
 function App() {
   return (
-    <div className="App">
-      <SideBar></SideBar>
+    <div style={{ backgroundImage: `url(${background})`, 
+          backgroundAttachment: 'fixed', backgroundSize: 'cover' }} >
+      <Template></Template>
     </div>
   );
 }

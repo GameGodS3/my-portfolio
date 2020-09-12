@@ -11,7 +11,7 @@ import { ReactComponent as github } from './../assets/github.svg';
 import { ReactComponent as linkedin } from './../assets/linkedin.svg';
 import { ReactComponent as twitter } from './../assets/twitter.svg';
 
-const drawerWidth = 310;
+const drawerWidth = 325;
 
 const useStyles = makeStyles((theme) => ({
   drawer: {

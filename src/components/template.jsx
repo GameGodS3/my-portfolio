@@ -9,11 +9,12 @@ import About from './about';
 import Skills from './skills';
 import Projects from './projects';
 
-const drawerWidth = 310;
+const drawerWidth = 325;
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    color: '#FF6666'
   },
   appBar: {
     width: `calc(100% - ${drawerWidth}px - 25px)`,
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: '25px',
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(5),
-    opacity: 0.9
+    opacity: 0.95
   },
 }));
 

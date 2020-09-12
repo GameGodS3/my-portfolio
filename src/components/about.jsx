@@ -11,7 +11,7 @@ export default function About(props) {
       <div id="about" >
         <Typography variant="h2" style={{ flex:1, textAlign: 'center' }} >About</Typography>
         <Grid container direction='row' justify='center' spacing={3} >
-            <Grid item sm={12} md={12} style={{ marginTop: '38px' }} >
+            <Grid item sm={12} md={12} style={{ marginTop: '38px', color: 'black' }} >
                 {/* <Card  >
                     <CardContent > */}
                         <Typography style={{ fontSize: '25px' }}>

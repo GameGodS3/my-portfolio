@@ -29,13 +29,17 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: `${drawerWidth+25}px`,
     marginRight: '25px',
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
+    padding: theme.spacing(5),
     opacity: 0.9
   },
 }));
 
 export default function Template() {
   const classes = useStyles();
+  
+  const scrollToTag = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <div className={classes.root}>
@@ -47,12 +51,12 @@ export default function Template() {
           </Typography>
         </Toolbar>
       </AppBar> */}
-      <SideBar />
+      <SideBar scroll={ (id) => scrollToTag(id) } />
       <main className={classes.content}>
         {/* <div className={classes.toolbar} /> */}
-            <About></About>
-            {/* <Skills></Skills>
-            <Projects></Projects> */}
+            <About scroll={ (id) => scrollToTag(id) } ></About>
+            <Skills ></Skills>
+            <Projects></Projects>
       </main>
     </div>
   );

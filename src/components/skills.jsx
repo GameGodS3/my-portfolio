@@ -37,7 +37,7 @@ export default function Skills(props) {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid sm={0} md={3}></Grid>
+                <Grid item sm={false} md={3}></Grid>
                 <Grid item sm={12} md={6} style={{ color: 'black' }} >
                     <Card >
                         <CardHeader title={"Programming langs and Tech Stacks known/worked with"} ></CardHeader>
@@ -52,7 +52,7 @@ export default function Skills(props) {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid sm={0} md={3}></Grid>
+                <Grid item sm={false} md={3}></Grid>
                 <Box border={1} borderColor='black' borderRadius='50%' >
                     <IconButton onClick={ () => scroll("projects") } >
                         <KeyboardArrowDownIcon style={{  

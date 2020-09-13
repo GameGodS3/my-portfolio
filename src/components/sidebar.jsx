@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
+// import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
@@ -53,17 +53,17 @@ export default function SideBar(props) {
         {/* <List>
           {['About', "What I'm good at", 'My Work'].map((text, index) => ( */}
             <ListItem button divider >
-              <ListItemText primary={'About'} align="center" onClick={ () => scroll('about') } />
+              <ListItemText primary={'About'} align="center" onClick={ function() { scroll('about') } } />
             </ListItem>
             <ListItem button divider >
-              <ListItemText primary={"What I'm good at"} align="center" onClick={ () => scroll('skills') } />
+              <ListItemText primary={"What I'm good at"} align="center" onClick={ function() {scroll('skills')} } />
             </ListItem>
             <ListItem button divider >
-              <ListItemText primary={'My Work'} align="center" onClick={ () => scroll('projects') } />
+              <ListItemText primary={'My Work'} align="center" onClick={ function() {scroll('projects')} } />
             </ListItem>
           {/* ))}
         </List> */}
-        <Grid container xs={12} style={{ marginTop: '30px' }} spacing={1} justify="center" >
+        <Grid container style={{ marginTop: '30px' }} spacing={1} justify="center" >
           <Grid item xs={2} >
             <a href="https://www.linkedin.com/in/ajay-krishna-k-v-4b8851193" target="_blank" rel="noopener noreferrer" >
               <IconButton>

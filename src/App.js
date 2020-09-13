@@ -1,6 +1,6 @@
 import React from 'react';
 import Template from './components/template';
-import background from './assets/background.jpeg';
+import background from './assets/background.jpg';
 
 function App() {
   return (

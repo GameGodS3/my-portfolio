@@ -65,7 +65,7 @@ export default function SideBar(props) {
         </List> */}
         <Grid container xs={12} style={{ marginTop: '30px' }} spacing={1} justify="center" >
           <Grid item xs={2} >
-            <a href="https://www.linkedin.com/in/ajay-krishna-k-v-4b8851193" target="_blank">
+            <a href="https://www.linkedin.com/in/ajay-krishna-k-v-4b8851193" target="_blank" rel="noopener noreferrer" >
               <IconButton>
                     <SvgIcon component={linkedin}>
                     </SvgIcon>
@@ -73,7 +73,7 @@ export default function SideBar(props) {
             </a>
           </Grid>
           <Grid item xs={2} >
-            <a href="https://github.com/AJAYK-01" target="_blank">
+            <a href="https://github.com/AJAYK-01" target="_blank" rel="noopener noreferrer" >
               <IconButton>
                     <SvgIcon component={github}>
                     </SvgIcon>
@@ -81,7 +81,7 @@ export default function SideBar(props) {
             </a>
           </Grid>
           <Grid item xs={2} >
-            <a href="https://twitter.com/ajayk_kv_" target="_blank">
+            <a href="https://twitter.com/ajayk_kv_" target="_blank" rel="noopener noreferrer" >
               <IconButton>
                     <SvgIcon component={twitter}>
                     </SvgIcon>

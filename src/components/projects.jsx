@@ -1,15 +1,19 @@
 import React from 'react';
-import { Avatar, Button, Card, CardActions, CardContent, CardHeader, Grid, Typography } from '@material-ui/core';
+import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, Grid, IconButton, Typography } from '@material-ui/core';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import ktunotif from './../assets/ktunotif.jpg'
 import easyassign from './../assets/easyassign.png';
 import monitor from './../assets/monitor.png';
 import gocorona from './../assets/gocorona.png';
 
-export default function Projects() {
+export default function Projects(props) {
+
+    const { scroll } = props;
+
     return(
         <div id="projects" >
             <Typography variant="h2" align='left' style={{ flex:1, textAlign: 'center' }} >My Work</Typography>
-            <Grid container justify='center' spacing={2} style={{ marginTop: '10px' }} >
+            <Grid container justify='center' spacing={2} style={{ marginTop: '1px' }} >
                 <Grid item sm={12} md={6} >
                     <Card >
                         <CardHeader title={"Easy Assignments"} action={
@@ -24,7 +28,8 @@ export default function Projects() {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size='small' style={{ color: '#FF6666' }} >
+                            <Button onClick={() => window.open('https://github.com/AJAYK-01/EasyAssignments', '_blank')} 
+                                size='small' style={{ color: '#FF6666' }} >
                                 <Typography variant='subtitle2' >Project Link</Typography>
                             </Button>
                         </CardActions>
@@ -43,7 +48,8 @@ export default function Projects() {
                             </Typography>
                         </CardContent>
                         <CardActions >
-                            <Button size='small' style={{ color: '#FF6666' }} >
+                            <Button onClick={() => window.open('https://github.com/AJAYK-01/KTU-Notifier', '_blank')} 
+                                size='small' style={{ color: '#FF6666' }} >
                                 <Typography variant='subtitle2' >Project Link</Typography>
                             </Button>
                         </CardActions>
@@ -63,7 +69,8 @@ export default function Projects() {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size='small' style={{ color: '#FF6666' }} >
+                            <Button onClick={() => window.open('http://monitor.hackp.cyberdome.org.in', '_blank')} 
+                                size='small' style={{ color: '#FF6666' }} >
                                 <Typography variant='subtitle2' >Project Link</Typography>
                             </Button>
                         </CardActions>
@@ -82,12 +89,20 @@ export default function Projects() {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size='small' style={{ color: '#FF6666' }} >
+                            <Button onClick={() => window.open('https://github.com/AJAYK-01/Go-Corona-Meme', '_blank')}
+                                size='small' style={{ color: '#FF6666' }} >
                                 <Typography variant='subtitle2' >Project Link</Typography>
                             </Button>
                         </CardActions>
                     </Card>
                 </Grid>
+                <Box border={1} borderColor='black' borderRadius='50%' >
+                    <IconButton onClick={ () => scroll("about") } >
+                        <KeyboardArrowUpIcon style={{  
+                            fontSize: '30px', color: 'black'
+                        }} ></KeyboardArrowUpIcon>
+                    </IconButton>
+                </Box>
             </Grid>
         </div>
     );

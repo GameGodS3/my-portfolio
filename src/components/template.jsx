@@ -56,8 +56,8 @@ export default function Template() {
       <main className={classes.content}>
         {/* <div className={classes.toolbar} /> */}
             <About scroll={ (id) => scrollToTag(id) } ></About>
-            <Skills ></Skills>
-            <Projects></Projects>
+            <Skills scroll={ (id) => scrollToTag(id) } ></Skills>
+            <Projects scroll={ (id) => scrollToTag(id) } ></Projects>
       </main>
     </div>
   );

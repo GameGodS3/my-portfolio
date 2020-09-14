@@ -7,7 +7,7 @@ export default function Skills(props) {
     const { scroll } = props;
 
     return(
-        <div id="skills" >
+        <div id="skills" style={{ marginTop: '50px' }} >
            <Typography variant="h2" align='left' style={{ flex:1, textAlign: 'center' }} >Skills</Typography>
            <Grid container justify='center' spacing={2} style={{ marginTop: '10px', marginBottom: '10px' }} >
                 <Grid item sm={12} md={6} style={{ color: 'black' }} >

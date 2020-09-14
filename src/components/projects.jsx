@@ -11,7 +11,7 @@ export default function Projects(props) {
     const { scroll } = props;
 
     return(
-        <div id="projects" >
+        <div id="projects" style={{ marginTop: '50px' }} >
             <Typography variant="h2" align='left' style={{ flex:1, textAlign: 'center' }} >My Work</Typography>
             <Grid container justify='center' spacing={2} style={{ marginTop: '1px' }} >
                 <Grid item sm={12} md={6} >
@@ -97,7 +97,7 @@ export default function Projects(props) {
                     </Card>
                 </Grid>
                 <Box border={1} borderColor='black' borderRadius='50%' >
-                    <IconButton onClick={ () => scroll("about") } >
+                    <IconButton onClick={ () => scroll("top") } >
                         <KeyboardArrowUpIcon style={{  
                             fontSize: '30px', color: 'black'
                         }} ></KeyboardArrowUpIcon>

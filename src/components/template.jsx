@@ -8,6 +8,7 @@ import SideBar from './sidebar';
 import About from './about';
 import Skills from './skills';
 import Projects from './projects';
+import { Grid } from '@material-ui/core';
 
 const drawerWidth = 325;
 
@@ -16,22 +17,30 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     color: '#FF6666'
   },
-  appBar: {
-    width: `calc(100% - ${drawerWidth}px - 25px)`,
-    height: 64,
-    marginLeft: drawerWidth+25,
-    background: "transparent",
-    boxShadow: 'none'
-  },
+  // appBar: {
+  //   width: `calc(100% - ${drawerWidth}px - 25px)`,
+  //   height: 64,
+  //   marginLeft: drawerWidth+25,
+  //   background: "transparent",
+  //   boxShadow: 'none'
+  // },
   // necessary for content to be below app bar
-  toolbar: theme.mixins.toolbar,
+  // toolbar: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
     marginLeft: `${drawerWidth+25}px`,
     marginRight: '25px',
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(5),
-    opacity: 0.95
+    opacity: 0.95,
+    [theme.breakpoints.down('sm')] : {
+      minWidth: '100%',
+      minHeight: '0%',
+      marginLeft: '0px',
+      marginRight: '0px',
+      padding: theme.spacing(2),
+      position: 'unset',
+    },
   },
 }));
 
@@ -39,11 +48,14 @@ export default function Template() {
   const classes = useStyles();
   
   const scrollToTag = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    if(id==="top")
+      window.scrollTo( {left: 0, top: 0, behavior: 'smooth'} );
+    else
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
-    <div className={classes.root}>
+    <Grid container className={classes.root}>
       <CssBaseline />
       {/* <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
@@ -52,13 +64,15 @@ export default function Template() {
           </Typography>
         </Toolbar>
       </AppBar> */}
-      <SideBar scroll={ (id) => scrollToTag(id) } />
-      <main className={classes.content}>
+      <Grid item xs={12} >
+          <SideBar scroll={ (id) => scrollToTag(id) } />
+      </Grid>
+      <Grid item xs={12} className={classes.content}>
         {/* <div className={classes.toolbar} /> */}
             <About scroll={ (id) => scrollToTag(id) } ></About>
             <Skills scroll={ (id) => scrollToTag(id) } ></Skills>
             <Projects scroll={ (id) => scrollToTag(id) } ></Projects>
-      </main>
-    </div>
+      </Grid>
+    </Grid>
   );
 }

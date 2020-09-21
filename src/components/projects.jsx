@@ -16,14 +16,14 @@ export default function Projects(props) {
             <Grid container justify='center' spacing={2} style={{ marginTop: '1px' }} >
                 <Grid item sm={12} md={6} >
                     <Card >
-                        <CardHeader title={"Easy Assignments"} action={
+                        <CardHeader title={"Easy Notes"} action={
                             <Avatar src={easyassign} ></Avatar>
                         } ></CardHeader>
                         <CardContent>
                             <Typography>
-                                An Android app for easy assignments sharing between 
-                                the 10 pointers and the normies with separate account profiles
-                                and Realtime cloud based push notifcations. {<br />}
+                                An Android app for easy notes sharing, including  
+                                separate account profiles for sharers and viewers 
+                                with Realtime cloud based push notifcations. {<br />}
                                 Built using Flutter mobile app framework and Firebase serverless backend.
                             </Typography>
                         </CardContent>

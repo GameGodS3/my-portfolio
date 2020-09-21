@@ -7,6 +7,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import SideBar from './sidebar';
 import About from './about';
 import Skills from './skills';
+import Contact from './contact';
 import Projects from './projects';
 import { Grid } from '@material-ui/core';
 
@@ -72,6 +73,7 @@ export default function Template() {
             <About scroll={ (id) => scrollToTag(id) } ></About>
             <Skills scroll={ (id) => scrollToTag(id) } ></Skills>
             <Projects scroll={ (id) => scrollToTag(id) } ></Projects>
+            <Contact ></Contact>
       </Grid>
     </Grid>
   );

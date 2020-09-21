@@ -1,9 +1,9 @@
 import React from 'react';
 import { Typography,  Card, CardMedia, Grid, IconButton, Box, Avatar, makeStyles } from '@material-ui/core';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
-import coder from './../assets/coder.gif';
-import resume from './../assets/resume.png';
-import pdf from './../assets/resume.pdf'
+// import coder from './../assets/coder.gif';
+// import resume from './../assets/resume.png';
+// import pdf from './../assets/resume.pdf'
 
 const useStyles = makeStyles((theme) => ({
     title: { [theme.breakpoints.down('sm')]: {marginTop: '50px'} } ,
@@ -41,7 +41,7 @@ export default function About(props) {
                             possible.
                         </Typography>
                         <Typography style={{ marginBottom: '18px', fontSize: '18px' }} >
-                            I enjoy working and collabing with teams and am currently part of a student
+                            I enjoy working and collaborating with teams and am currently part of a student
                             team, as the UX designer and mobile frontend developer, of Ceekyoo search engine 
                             project.
                         </Typography>

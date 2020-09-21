@@ -30,7 +30,7 @@ export default function Skills(props) {
                             <Typography >
                                 Worked with Django and Flask. <br/>
                                 Designed backend logic for a Dark Web Crawler
-                                for Kerla Police Cyberdome's hackathon . <br/>
+                                for Kerala Police Cyberdome's hackathon . <br/>
                                 Good experience in Firebase Database management. <br/>
                                 Newbie learner to PostgreSQL. 
                             </Typography>

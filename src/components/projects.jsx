@@ -1,6 +1,6 @@
 import React from 'react';
 import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, Grid, IconButton, Typography } from '@material-ui/core';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import ktunotif from './../assets/ktunotif.jpg'
 import easyassign from './../assets/easyassign.png';
 import monitor from './../assets/monitor.png';
@@ -97,10 +97,10 @@ export default function Projects(props) {
                     </Card>
                 </Grid>
                 <Box border={1} borderColor='black' borderRadius='50%' >
-                    <IconButton onClick={ () => scroll("top") } >
-                        <KeyboardArrowUpIcon style={{  
+                    <IconButton onClick={ () => scroll("contact") } >
+                        <KeyboardArrowDownIcon style={{  
                             fontSize: '30px', color: 'black'
-                        }} ></KeyboardArrowUpIcon>
+                        }} ></KeyboardArrowDownIcon>
                     </IconButton>
                 </Box>
             </Grid>

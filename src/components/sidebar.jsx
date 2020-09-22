@@ -61,6 +61,9 @@ export default function SideBar(props) {
             <ListItem button divider >
               <ListItemText primary={'My Work'} align="center" onClick={ function() {scroll('projects')} } />
             </ListItem>
+            <ListItem button divider >
+              <ListItemText primary={'Contact Me'} align="center" onClick={ function() {scroll('contact')} } />
+            </ListItem>
           {/* ))}
         </List> */}
         <Grid container style={{ marginTop: '30px' }} spacing={1} justify="center" >

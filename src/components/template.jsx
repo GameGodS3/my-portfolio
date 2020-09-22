@@ -73,7 +73,7 @@ export default function Template() {
             <About scroll={ (id) => scrollToTag(id) } ></About>
             <Skills scroll={ (id) => scrollToTag(id) } ></Skills>
             <Projects scroll={ (id) => scrollToTag(id) } ></Projects>
-            <Contact ></Contact>
+            <Contact scroll={ (id) => scrollToTag(id) } ></Contact>
       </Grid>
     </Grid>
   );

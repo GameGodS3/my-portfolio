@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-// import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
@@ -50,22 +49,20 @@ export default function SideBar(props) {
         </Box>   
         <Typography style={{ marginBottom:'18px', fontSize: '24px', textAlign: "center" }} > Ajay Krishna KV </Typography>
         <Divider style={{ marginBottom: '0px' }} />
-        {/* <List>
-          {['About', "What I'm good at", 'My Work'].map((text, index) => ( */}
-            <ListItem button divider >
-              <ListItemText primary={'About'} align="center" onClick={ function() { scroll('about') } } />
-            </ListItem>
-            <ListItem button divider >
-              <ListItemText primary={"What I'm good at"} align="center" onClick={ function() {scroll('skills')} } />
-            </ListItem>
-            <ListItem button divider >
-              <ListItemText primary={'My Work'} align="center" onClick={ function() {scroll('projects')} } />
-            </ListItem>
-            <ListItem button divider >
-              <ListItemText primary={'Contact Me'} align="center" onClick={ function() {scroll('contact')} } />
-            </ListItem>
-          {/* ))}
-        </List> */}
+
+        <ListItem button divider >
+          <ListItemText primary={'About'} align="center" onClick={ function() { scroll('about') } } />
+        </ListItem>
+        <ListItem button divider >
+          <ListItemText primary={"What I'm good at"} align="center" onClick={ function() {scroll('skills')} } />
+        </ListItem>
+        <ListItem button divider >
+          <ListItemText primary={'My Work'} align="center" onClick={ function() {scroll('projects')} } />
+        </ListItem>
+        <ListItem button divider >
+          <ListItemText primary={'Contact Me'} align="center" onClick={ function() {scroll('contact')} } />
+        </ListItem>
+
         <Grid container style={{ marginTop: '30px' }} spacing={1} justify="center" >
           <Grid item xs={3} ></Grid>
           <Grid item xs={2} >
